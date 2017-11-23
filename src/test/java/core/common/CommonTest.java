@@ -22,7 +22,7 @@ public class CommonTest {
 
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        // driver.manage().window().maximize();
+        //driver.manage().window().maximize();
     }
 
     protected WebDriver getDriver() {

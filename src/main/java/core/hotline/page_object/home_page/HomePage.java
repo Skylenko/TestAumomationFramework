@@ -1,7 +1,7 @@
 package core.hotline.page_object.home_page;
 
 import core.common.AbstractPage;
-import core.hotline.page_object.AV_page.AVPage;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,9 +15,9 @@ public class HomePage extends AbstractPage {
         super(webDriver);
     }
 
-    public AVPage changeLanguage() {
+    public HomePage changeLanguage() {
 
         changeLanguage.click();
-        return new AVPage(driver);
+        return new HomePage(driver);
     }
 }

@@ -1,7 +1,7 @@
 package core.hotline.page_object.google_page;
 
 import core.common.AbstractPage;
-import core.hotline.page_object.AV_page.AVPage;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,14 +24,14 @@ public class GooglePage extends AbstractPage {
         this.driver = webDriver;
     }
 
-    public AVPage searchByText(String text) {
+    public GooglePage searchByText(String text) {
 
         searchField.clear();
         searchField.sendKeys(text);
         searchButton.click();
         hotlineLink.click();
 
-        return new AVPage(driver);
+        return new GooglePage(driver);
     }
 }
 

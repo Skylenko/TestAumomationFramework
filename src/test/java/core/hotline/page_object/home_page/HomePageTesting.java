@@ -1,7 +1,7 @@
 package core.hotline.page_object.home_page;
 
 import core.common.CommonTest;
-import core.hotline.page_object.AV_page.AVPage;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -31,7 +31,7 @@ public class HomePageTesting extends CommonTest {
     public void checkLanguageTesting() {
 
         HomePage homePage = new HomePage(driver);
-        AVPage avPage = homePage.changeLanguage();
+        homePage.changeLanguage();
 
         String buttonTextColor = driver.findElement(By.xpath("(//span[@class='js-change-language'])[1]"))
                 .getCssValue("color");
